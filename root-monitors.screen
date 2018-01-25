@@ -1,0 +1,3 @@
+# For monitors that requires root priv
+
+screen -t "tcpdump-trace.bash" /usr/bin/env bash -c './launch-monitor.bash tcpdump-trace.bash'

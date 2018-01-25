@@ -1,0 +1,12 @@
+#
+# High Docker Containers CPU Monitors
+#
+screen -t "cpu-failure-restarter.bash justdo-beta-web-app" /usr/bin/env bash -c './launch-monitor.bash cpu-failure-restarter.bash justdo-beta-web-app'
+screen -t "cpu-failure-restarter.bash justdo-web-app" /usr/bin/env bash -c './launch-monitor.bash cpu-failure-restarter.bash justdo-web-app'
+screen -t "cpu-failure-restarter.bash justdo-landing-app" /usr/bin/env bash -c './launch-monitor.bash cpu-failure-restarter.bash justdo-landing-app'
+screen -t "cpu-failure-restarter.bash justdo-beta-landing-app" /usr/bin/env bash -c './launch-monitor.bash cpu-failure-restarter.bash justdo-beta-landing-app'
+
+#
+# TCP DUMP + SIZE MONITOR
+#
+screen -t "tcpdump-trace-size-monitor.bash" /usr/bin/env bash -c './launch-monitor.bash tcpdump-trace-size-monitor.bash'
